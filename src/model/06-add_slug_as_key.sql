@@ -1,0 +1,1 @@
+alter table posts change slug slug varchar(100) unique;

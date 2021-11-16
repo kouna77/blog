@@ -1,0 +1,1 @@
+alter table users change email email varchar(100) unique;
