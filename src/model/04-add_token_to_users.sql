@@ -1,1 +1,0 @@
-alter table users add column token varchar(100) null;
