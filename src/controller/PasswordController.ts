@@ -41,7 +41,7 @@ export default class PasswordController extends Controller {
       })
       const mailService = Container.get(MailService)
       await mailService.passwordForgot({
-        user: user.toJSON(),
+        user: user,
         clearToken: passwordRequest.token,
       })
       response.json(new AppApiDataResponse({ data: passwordRequest }))

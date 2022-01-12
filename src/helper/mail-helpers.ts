@@ -104,7 +104,7 @@ export function sendMail (options): Promise<any> {
           ...variables
         })
       } catch (e) {
-        throw new AppException({ message: 'Error while rendering template: ' + e.message })
+        throw new AppException({ message: 'Error while rendering template: ' + e })
       }
       if (IN_TEST) {
         DEBUG && console.log('[SendMail] %o', data)
